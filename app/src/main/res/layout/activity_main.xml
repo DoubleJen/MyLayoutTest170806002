@@ -22,8 +22,10 @@
            android:layout_alignParentRight="true"
            android:layout_alignParentTop="true"
            android:text="GUESS"
+           android:onClick="doGuess"
            />
        <EditText
+           android:id="@+id/inputText"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:layout_alignParentLeft="true"
@@ -46,27 +48,34 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="RESET"
+            android:onClick="doReset"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="SETTING"
+            android:onClick="doSetting"
             />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="EXIT"
+            android:onClick="doExit"
             />
 
     </LinearLayout>
 
-    <!--2-->
+    <!--2Middle-->
     <TextView
+        android:id="@+id/logText"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ff0"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="#00f"
         android:layout_below="@id/topLine"
         android:layout_above="@id/bottomLine"
         />
